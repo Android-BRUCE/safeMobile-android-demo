@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/process_widget"
+    android:minHeight="72.0dip"
+    android:minWidth="294.0dip"
+    android:updatePeriodMillis="0" />
+<!--     android:updatePeriodMillis="0" 
+设置更新时间为0 ，这样就可以自己设置更新时间
+ -->

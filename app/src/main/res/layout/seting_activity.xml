@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ncepu="http://schemas.android.com/apk/com.safe.a360.safemobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="设置中心" />
+
+    <com.safe.a360.safemobile.view.SettingItem
+        android:id="@+id/si_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ncepu:desc_off="自动更新已关闭"
+        ncepu:desc_on="自动更新已开启"
+        ncepu:title="自动更新设置" />
+
+    <com.safe.a360.safemobile.view.SettingItem
+        android:id="@+id/si_queryphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ncepu:desc_off="归属地显示设置已经关闭"
+        ncepu:desc_on="归属地显示设置已经开启"
+        ncepu:title="电话归属地显示设置" />
+
+    <com.safe.a360.safemobile.view.SettingClickView
+        android:id="@+id/si_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.safe.a360.safemobile.view.SettingClickView
+        android:id="@+id/si_addresslocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.safe.a360.safemobile.view.SettingItem
+        android:id="@+id/si_callsafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ncepu:desc_off="黑名单拦截已关闭"
+        ncepu:desc_on="黑名单拦截已开启"
+        ncepu:title="黑名单拦截设置" />
+</LinearLayout>
