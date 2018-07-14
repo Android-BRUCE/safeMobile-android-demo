@@ -32,6 +32,10 @@
         android:id="@+id/iv_drag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
-        android:src="@drawable/drag" />
+        android:src="@drawable/drag"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="107dp"
+        android:layout_marginEnd="107dp" />
 </RelativeLayout>

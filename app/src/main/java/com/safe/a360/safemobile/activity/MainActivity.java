@@ -61,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
                     case 3://进程管理
                         startActivity( new Intent(MainActivity.this, TaskManagerActivity.class) );
                         break;
+                    case 4://流量统计
+                        startActivity(new Intent(MainActivity.this, ScanResoultActivity.class));
+                        break;
                     case 5://手机杀毒
                         startActivity( new Intent(MainActivity.this, AntivirusActivity.class) );
                         break;

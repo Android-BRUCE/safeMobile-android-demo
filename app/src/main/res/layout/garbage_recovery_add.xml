@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_te"
+            style="@style/TitleStyle2"
+            android:text="扫描结果" />
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:onClick="backprepage"
+            android:src="@drawable/back_write"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评分规则" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="户主信息：" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:text="张**" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="户主信息：" />
+
+            <TextView
+                android:id="@+id/user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="8sp"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:text="临安区锦城街道钱王大街888号" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/textView222"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="分类正确：" />
+            </LinearLayout>
+            <com.sevenheaven.segmentcontrol.SegmentControl xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/segment_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.19"
+                android:textSize="13sp"
+                app:boundWidth="4dp"
+                app:cornerRadius="5dp"
+                app:horizonGap="10dp"
+                app:normalColor="#FFFFFF"
+                app:selectedColor="#ffa500"
+                app:separatorWidth="2dp"
+                app:texts="正确|不正确|"
+                app:verticalGap="10dp" />
+
+            <TextView
+                android:id="@+id/textView223"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="15dp"
+                android:text="2.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/textView322"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="分类正确：" />
+            </LinearLayout>
+
+            <com.sevenheaven.segmentcontrol.SegmentControl xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/segment_control2"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.19"
+                android:textSize="13sp"
+                app:boundWidth="4dp"
+                app:cornerRadius="5dp"
+                app:horizonGap="10dp"
+                app:normalColor="#FFFFFF"
+                app:selectedColor="#ffa500"
+                app:separatorWidth="2dp"
+                app:texts="正确|不正确|"
+                app:verticalGap="10dp" />
+
+            <TextView
+                android:id="@+id/textView323"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="15dp"
+                android:text="2.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/textView422"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="分类正确：" />
+            </LinearLayout>
+
+            <com.sevenheaven.segmentcontrol.SegmentControl xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/segment_control3"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.19"
+                android:textSize="13sp"
+                app:boundWidth="4dp"
+                app:cornerRadius="5dp"
+                app:horizonGap="10dp"
+                app:normalColor="#FFFFFF"
+                app:selectedColor="#ffa500"
+                app:separatorWidth="2dp"
+                app:texts="正确|不正确|"
+                app:verticalGap="10dp" />
+
+            <TextView
+                android:id="@+id/textView423"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="15dp"
+                android:text="2.0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/textView522"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="分类正确：" />
+            </LinearLayout>
+
+            <com.sevenheaven.segmentcontrol.SegmentControl xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/segment_control4"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.19"
+                android:textSize="13sp"
+                app:boundWidth="4dp"
+                app:cornerRadius="5dp"
+                app:horizonGap="10dp"
+                app:normalColor="#FFFFFF"
+                app:selectedColor="#ffa500"
+                app:separatorWidth="2dp"
+                app:texts="到位|不到我|"
+                app:verticalGap="10dp" />
+
+            <TextView
+                android:id="@+id/textView523"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="15dp"
+                android:text="2.0" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/content_2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可堆肥重量:" />
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_shape"
+                />
+
+            <TextView
+                android:id="@+id/content_2_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:text="kg" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/content_2_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="2.0" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/content_3_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总积分:" />
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/content_3_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="51.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/content_4_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上传日期:"
+                android:layout_weight="0.20" />
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/content_4_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-04-05  09:51" />
+        </LinearLayout>
+    </LinearLayout>
+<!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#66CCFF"/>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+ <LinearLayout
+     android:layout_margin="10dp"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:weightSum="1">
+     <TextView
+         android:id="@+id/content_5_text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="拍照:" />
+     <ImageView
+         android:layout_marginLeft="10dp"
+         android:src="@drawable/add_image"
+         android:layout_width="71sp"
+         android:layout_height="89dp"
+         android:onClick="selectImage"
+         android:text="选取照片"
+         android:layout_weight="0.07" />
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+ </LinearLayout>
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_commit"
+            style="@style/ButtonStyle2"
+            android:onClick="commitresoult"
+            android:text="提交" />
+    </RelativeLayout>
+
+</LinearLayout>
