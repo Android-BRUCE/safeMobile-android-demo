@@ -9,6 +9,7 @@ import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLSession;
 
 /**
+ *  该类需要在清单文件中注册
  * Created by Administrator on 2018-07-14.
  */
 

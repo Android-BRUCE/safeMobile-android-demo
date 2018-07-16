@@ -215,7 +215,10 @@ public class ScanResoultActivity extends AppCompatActivity {
             @Override
             public void onFinished() {
                 Toast.makeText(x.app(), "finished", Toast.LENGTH_LONG).show();
+                //销毁progressBar
+                ProgressBarActivity.instance.finish();
             }
         });
     }
+
 }
