@@ -402,7 +402,7 @@ public class SplashActivity extends AppCompatActivity {
      * 进入主界面。
      */
     private void enterHome(){
-    	Intent intent = new Intent(SplashActivity.this,MainActivity.class);
+    	Intent intent = new Intent(SplashActivity.this,LoginTestActivity.class);
     	startActivity(intent);
     	finish();
     }

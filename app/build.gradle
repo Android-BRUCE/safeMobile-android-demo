@@ -20,6 +20,17 @@ android {
 }
 
 dependencies {
+    /*底部菜单栏 --sart*/
+    repositories {
+        jcenter()
+    }
+    dependencies{
+        compile 'com.jpeng:JPTabBar:1.4.0'
+    }
+    /* */
+     /*设置顶部状态栏 -- start*/
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    /*设置顶部状态栏 --- end*/
     compile 'com.pnikosis:materialish-progress:1.7'
     compile 'org.xutils:xutils:3.5.0'
     compile 'com.7heaven.widgets:segmentcontrol:1.17'

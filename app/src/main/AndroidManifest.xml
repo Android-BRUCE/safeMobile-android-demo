@@ -50,12 +50,14 @@
             </intent-filter>
         </activity>
         <!--主页activity  -->
-        <activity android:name="com.safe.a360.safemobile.activity.MainActivity">
+        <activity android:name="com.safe.a360.safemobile.activity.MainActiivityTwo">
             <intent-filter >
                 <action android:name="homeActovityStart"></action>
                 <category android:name="android.intent.category.DEFAULT"></category>
             </intent-filter>
         </activity>
+        <activity android:name="com.safe.a360.safemobile.activity.MainActivity"></activity>
+        <activity android:name="com.safe.a360.safemobile.activity.LoginTestActivity"></activity>
         <activity android:name="com.safe.a360.safemobile.activity.LostFindActivity"></activity>
         <activity android:name="com.safe.a360.safemobile.activity.Setup1Activity"></activity>
         <activity android:name="com.safe.a360.safemobile.activity.Setup2Activity"></activity>
