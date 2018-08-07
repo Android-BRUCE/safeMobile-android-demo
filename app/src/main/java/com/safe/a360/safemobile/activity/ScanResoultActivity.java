@@ -27,7 +27,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * 测试页面
+ * 测试页面 图片的单张选择显示 文件的上传
  */
 @ContentView(R.layout.garbage_recovery_add)
 public class ScanResoultActivity extends AppCompatActivity {

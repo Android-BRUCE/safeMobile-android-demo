@@ -3,7 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.safe.a360.safemobile"
-
     >
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -39,7 +38,9 @@
         android:theme="@style/AppTheme"
         android:hasCode="true"
         android:allowTaskReparenting="false"
+        tools:replace="android:name"
         >
+        <!--<user-sdk tools:overrideLibrary="cn.sharesdk"/>-->
         <uses-library android:name="android.test.runner"/>
         <activity android:name="com.safe.a360.safemobile.activity.SplashActivity"
             android:label="@string/app_name"

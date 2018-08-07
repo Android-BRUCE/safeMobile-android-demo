@@ -1,5 +1,6 @@
 package com.safe.a360.safemobile.activity;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
@@ -15,7 +16,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.RelativeLayout;
@@ -49,7 +49,7 @@ import java.net.URL;
  * @author BRUCE
  *
  */
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends Activity {
 	protected static final int CODE_UPDATE_DIALOG = 0;
 	protected static final int CODE_ENTER_HOME = 1;
 	protected static final int CODE_URL_ERROR = 2;
@@ -90,7 +90,7 @@ public class SplashActivity extends AppCompatActivity {
 			default:
 				break;
 			}
-		};
+		}
 	};
 	private SharedPreferences spPreferences;
 	private RelativeLayout rlRoot;// 根布局
@@ -402,8 +402,10 @@ public class SplashActivity extends AppCompatActivity {
      * 进入主界面。
      */
     private void enterHome(){
-    	Intent intent = new Intent(SplashActivity.this,LoginTestActivity.class);
-    	startActivity(intent);
+		System.out.println("111111111111111111111111111");
+		Intent intent = new Intent(SplashActivity.this,LoginTestActivity.class);
+		System.out.println("2222222222222222222222222");
+		startActivity(intent);
     	finish();
     }
     /**

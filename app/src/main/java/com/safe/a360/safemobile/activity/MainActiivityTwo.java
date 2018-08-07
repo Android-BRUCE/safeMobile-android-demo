@@ -28,7 +28,7 @@ import java.util.List;
  */
 
 /**
- * 类似于 微信一样的底部菜单Fragment
+ * 类似于 微信一样的底部菜单Fragment 首页
  */
 public class MainActiivityTwo extends AppCompatActivity implements BadgeDismissListener, OnTabSelectListener {
 

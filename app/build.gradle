@@ -1,15 +1,28 @@
 apply plugin: 'com.android.application'
+apply from: '../MobSDK.gradle'
+
 
 android {
     compileSdkVersion 26
     buildToolsVersion "25.0.0"
     defaultConfig {
         applicationId "com.safe.a360.safemobile"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+/*极光推送 start*/
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "6e8a2f7b3283c496bd5f4688", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
     }
     buildTypes {
         release {
@@ -20,15 +33,19 @@ android {
 }
 
 dependencies {
+    compile 'cn.jiguang.sdk:jpush:3.1.5'  // 极光推送 此处以JPush 3.1.5 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.2.3'  // 此处以JCore 1.2.3 版本为例。
+
     /*底部菜单栏 --sart*/
     repositories {
         jcenter()
     }
-    dependencies{
+    dependencies {
         compile 'com.jpeng:JPTabBar:1.4.0'
     }
+
     /* */
-     /*设置顶部状态栏 -- start*/
+    /*设置顶部状态栏 -- start*/
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
     /*设置顶部状态栏 --- end*/
     compile 'com.pnikosis:materialish-progress:1.7'

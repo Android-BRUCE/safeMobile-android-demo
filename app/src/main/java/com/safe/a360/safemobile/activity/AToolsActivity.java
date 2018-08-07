@@ -83,7 +83,7 @@ public class AToolsActivity extends AppCompatActivity {
 				if(result) {
 					Looper.prepare();//主动从消息队列中取出消息
 					Toast.makeText(AToolsActivity.this, "备份成功", Toast.LENGTH_SHORT).show();//不能再子线程中显示
-					Looper.loop();
+					Looper.loop();//分发消息
 				}else {
 					Looper.prepare();
 					Toast.makeText(AToolsActivity.this, "备份失败", Toast.LENGTH_SHORT).show();

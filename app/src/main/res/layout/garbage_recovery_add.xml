@@ -61,8 +61,8 @@
                 android:layout_weight="0.03"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:textStyle="bold"
-                android:text="张**" />
+                android:text="张**"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -85,8 +85,8 @@
                 android:ellipsize="end"
                 android:lineSpacingExtra="8sp"
                 android:maxLines="1"
-                android:textStyle="bold"
-                android:text="临安区锦城街道钱王大街888号" />
+                android:text="临安区锦城街道钱王大街888号"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 

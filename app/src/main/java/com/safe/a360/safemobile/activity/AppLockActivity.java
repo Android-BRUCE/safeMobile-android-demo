@@ -14,8 +14,7 @@ import com.safe.a360.safemobile.fragment.LockedFragment;
 import com.safe.a360.safemobile.fragment.UnLockFragment;
 
 
-public class AppLockActivity extends FragmentActivity implements OnClickListener {
-	
+public class AppLockActivity extends FragmentActivity implements OnClickListener {;
 	FrameLayout fl_content;
 	TextView tv_unlock;
 	TextView tv_lock;
