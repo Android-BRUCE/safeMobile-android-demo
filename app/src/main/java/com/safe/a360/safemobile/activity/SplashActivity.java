@@ -403,7 +403,7 @@ public class SplashActivity extends Activity {
      */
     private void enterHome(){
 		System.out.println("111111111111111111111111111");
-		Intent intent = new Intent(SplashActivity.this,LoginTestActivity.class);
+		Intent intent = new Intent(SplashActivity.this,MainActiivityTwo.class);
 		System.out.println("2222222222222222222222222");
 		startActivity(intent);
     	finish();
